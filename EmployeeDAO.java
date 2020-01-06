@@ -1,10 +1,7 @@
-package com.del.dao;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
+package com.del.second.dao;
+import java.sql.*;
 import java.util.ArrayList;
-import com.del.entity.Employee;
+import com.del.second.entity.Employee;
 public class EmployeeDAO 
 {
 	public boolean insertEmployee(Employee emp)
@@ -18,7 +15,7 @@ public class EmployeeDAO
 			Class.forName("oracle.jdbc.driver.OracleDriver");
 			con = DriverManager.getConnection(url,"scott","tiger");
 			pst = con.prepareStatement("insert into employee values(?,?,?,?)");
-			pst.setInt(1, emp.getEmpid());
+			pst.setInt(1, emp.getEmp_id());
 			pst.setString(2, emp.getName());
 			pst.setDouble(3, emp.getSalary());
 			pst.setDate(4, emp.getDoj());
@@ -33,7 +30,7 @@ public class EmployeeDAO
 			try
 			{
 				if(pst!=null) pst.close();
-				if(con!=null) pst.close();
+				if(con!=null) con.close();
 			}
 			catch(Exception ex)
 			{
@@ -55,7 +52,7 @@ public class EmployeeDAO
 			pst = con.prepareStatement("update employee set ename=?,salary=? where emp_id=?");
 			pst.setString(1, emp.getName());
 			pst.setDouble(2, emp.getSalary());
-			pst.setInt(3, emp.getEmpid());
+			pst.setInt(3, emp.getEmp_id());
 			count = pst.executeUpdate();
 		}
 		catch(Exception ex)
@@ -67,7 +64,7 @@ public class EmployeeDAO
 			try
 			{
 				if(pst!=null) pst.close();
-				if(con!=null) pst.close();
+				if(con!=null) con.close();
 			}
 			catch(Exception ex)
 			{
@@ -99,7 +96,7 @@ public class EmployeeDAO
 			try
 			{
 				if(pst!=null) pst.close();
-				if(con!=null) pst.close();
+				if(con!=null) con.close();
 			}
 			catch(Exception ex)
 			{
