@@ -1,41 +1,38 @@
-package com.del.second.entity;
-import java.sql.Date;
+package com.spring.web.entity;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class Employee 
 {
-	int emp_id;
-	String name;
+	@Id
+	int empid;
+	String ename;
 	double salary;
-	Date doj;
-	public Employee() {}
-	public Employee(int emp_id, String name, double salary, Date doj) 
+	public Employee() { }
+	public Employee(int empid, String ename, double salary) 
 	{
-		this.emp_id = emp_id;
-		this.name = name;
+		this.empid = empid;
+		this.ename = ename;
 		this.salary = salary;
-		this.doj = doj;
 	}
-	public int getEmp_id() {
-		return emp_id;
+	public int getEmpid() {
+		return empid;
 	}
-	public void setEmp_id(int emp_id) {
-		this.emp_id = emp_id;
+	public void setEmpid(int empid) {
+		this.empid = empid;
 	}
-	public String getName() {
-		return name;
+	public String getEname() {
+		return ename;
 	}
-	public void setName(String name) {
-		this.name = name;
+	public void setEname(String ename) {
+		this.ename = ename;
 	}
 	public double getSalary() {
 		return salary;
 	}
 	public void setSalary(double salary) {
 		this.salary = salary;
-	}
-	public Date getDoj() {
-		return doj;
-	}
-	public void setDoj(Date doj) {
-		this.doj = doj;
 	}
 }
