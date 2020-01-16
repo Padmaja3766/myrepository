@@ -1,0 +1,46 @@
+{
+	"id": "10b77932-4acb-4f40-bdaf-07a955eae1f5",
+	"name": "sample2",
+	"description": "",
+	"order": [
+		"dea1ade9-bb1b-2cdc-62db-658dd3139cfd"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1579165331621,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "dea1ade9-bb1b-2cdc-62db-658dd3139cfd",
+			"headers": "",
+			"headerData": [],
+			"url": "https://restcountries.eu/rest/v2/alpha?codes=col;no;ee",
+			"queryParams": [
+				{
+					"key": "codes",
+					"value": "col;no;ee",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "10b77932-4acb-4f40-bdaf-07a955eae1f5",
+			"data": null,
+			"dataMode": "params",
+			"name": "https://restcountries.eu/rest/v2/alpha?codes=col;no;ee",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1579165332565,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}

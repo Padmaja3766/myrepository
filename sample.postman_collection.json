@@ -1,0 +1,38 @@
+{
+	"id": "d60be184-1081-da8a-7d53-4b0aeac3ce75",
+	"name": "sample",
+	"description": "",
+	"order": [
+		"5f8e9fbe-bf92-5d49-32a3-445315952d3d"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1579165246270,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "5f8e9fbe-bf92-5d49-32a3-445315952d3d",
+			"headers": "",
+			"headerData": [],
+			"url": "https://restcountries.eu/rest/v2/callingcode/372",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "d60be184-1081-da8a-7d53-4b0aeac3ce75",
+			"data": null,
+			"dataMode": "params",
+			"name": "https://restcountries.eu/rest/v2/callingcode/372",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1579165249294,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}
