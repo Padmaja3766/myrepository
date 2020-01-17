@@ -1,0 +1,33 @@
+                               \\192.168.1.4
+1)what is the difference between BVT and Defects Life Cycle
+A.BVT prepares the test environment and executes testcase.
+  In DLC the code will be developed
+
+2)What is the test process and test design
+A.Test process will plan and design the testcases and prepare for execution
+  Test design is how the testing should be done
+
+3)what is the differencc between HTTP/SOAP/REST
+A.HTTP is an markup language,SOAP is an protocol where REST is an architectural pattern
+
+4)what Kind of tool is selenium in terms of Web based application
+A.Selenium is an open source tool which is used for automating the tests carried out on web browsers.
+
+5)what is the Load Runner suite and selenium suite
+A.Load Runner Suite is an automated testing tool that allows you to test before or after DEPLOYMENT
+  Selenium works on automating applications also which are web based
+
+6)Can selenium scripts be embedded in Load Runner - justify
+A.Yes,selenium scripts can be embedded in Load Runner by ANSL using C programming language.
+
+Requirement to automate a web based application for the currency validation
+
+1.The User has to validate the currency conversion keeping the base currency in INR as country Name India and display the 
+currency for the various transactions in the opencart and validate the base curreny with populated in the open cart application
+
+2.The input has to be taken for the user for the base currency and checked against the tranaction curreny with valiation on the 
+web based objects Count the number of links in the drop down box of the currency
+
+3.capture the validation message for the invalid curreny using the java script alert box or text message
+
+
